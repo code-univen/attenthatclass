@@ -13,6 +13,14 @@
 
 Route::get('/', 'WelcomeController@index');
 
+// Redirect to github to authenticate
+Route::get('github', 'AccountController@github_redirect');
+// Get back to redirect url
+Route::get('account/github', 'AccountController@github');
+
+Route::get('google', 'AccountController@google_redirect');
+Route::get('account/google', 'AccountController@google');
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
