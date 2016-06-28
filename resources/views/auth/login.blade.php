@@ -17,7 +17,9 @@
 							</ul>
 						</div>
 					@endif
-
+                    <a class="btn btn-primary" href="{{ url('github') }}">Login with GitHub</a>
+                    <a class="btn btn-danger" href="{{ url('google') }}">Login with Google</a>
+                    
 					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 

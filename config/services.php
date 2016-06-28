@@ -33,5 +33,14 @@ return [
 		'model'  => 'App\User',
 		'secret' => '',
 	],
-
+	'github' => [
+	    'client_id' => 'b60bf9091be8622f0496',
+	    'client_secret' => '10ca6968824a7ca88da2b1c92152d4556844e01f',
+	    'redirect' => 'http://attendthatclass-codeuniven.c9users.io/account/github',
+    ],
+    'google' => [
+        'client_id' =>  '373849075072-78lmcpgg6r5035g9c6j90g0f217lqnjs.apps.googleusercontent.com',
+        'client_secret' => '0BmjcYfQF-AImzSBCDu8B46r',
+        'redirect' =>  'http://attendthatclass-codeuniven.c9users.io/account/google',
+    ],
 ];
